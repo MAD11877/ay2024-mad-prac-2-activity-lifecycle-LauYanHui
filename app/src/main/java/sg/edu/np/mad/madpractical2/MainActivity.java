@@ -17,7 +17,10 @@ public class MainActivity extends AppCompatActivity {
         TextView tvName = findViewById(R.id.tvName);
         TextView tvDescription = findViewById(R.id.tvDescription);
         Button btnFollow = findViewById(R.id.id1.btnFollow);
-
+//        LinearLayout linearLayout = findViewById(R.id.id1);
+//
+//// Find the Button with the ID "btnFollow" inside the LinearLayout
+//        Button btnFollow = linearLayout.findViewById(R.id.btnFollow);
         tvName.setText(user.name);
         tvDescription.setText(user.description);
         btnFollow.setText("Follow");
