@@ -9,7 +9,7 @@
 
     <TextView
 
-        android:id="@+id/tvName"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -25,19 +25,23 @@
         android:text="MAD Practical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:flow_verticalBias="0"
+        app:layout_constraintTop_toTopOf="parent"
+
         />
 
     <ImageView
+        android:id="@+id/picture"
         android:layout_width="128dp"
         android:layout_height="128dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toTopOf="@id/tvName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+         />
 
     <TextView
+        android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
@@ -45,10 +49,10 @@
         android:textStyle="bold"
         android:textAlignment="center"
         android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent    "
+        app:layout_constraintTop_toBottomOf="@id/picture"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="100dp"
         />
     <TextView
         android:id="@+id/tvDescription"
@@ -62,11 +66,10 @@
         android:textSize="14sp"
         android:textAlignment="center"
         android:text="Lorem ipsum dolor sit amet, consectetur\nadipiscing elit, sed do eiusmod tempor incididunt\n  ut labore et dolore magna aliqua."
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.600"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_goneMarginTop="100dp"
 
         />
 
@@ -112,12 +115,10 @@
         android:text="FOLLOW"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnMessage"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.700"
-        app:layout_constraintHorizontal_bias="0.800"/>
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        />
 
     <Button
         android:id="@+id/btnMessage"
@@ -128,12 +129,10 @@
         android:text="MESSAGE"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.700"
-        app:layout_constraintHorizontal_bias="0.100"/>
+        app:layout_constraintStart_toEndOf="@id/btnFollow"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
