@@ -33,6 +33,8 @@
         android:id="@+id/picture"
         android:layout_width="128dp"
         android:layout_height="128dp"
+        android:src="@mipmap/ic_launcher"
+
         app:layout_constraintTop_toBottomOf="@id/title"
         app:layout_constraintBottom_toTopOf="@id/tvName"
         app:layout_constraintStart_toStartOf="parent"
@@ -133,6 +135,8 @@
         app:layout_constraintStart_toEndOf="@id/btnFollow"
         app:layout_constraintTop_toBottomOf="@id/tvDescription"
         />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
